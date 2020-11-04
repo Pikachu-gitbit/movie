@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE SEARCH</title>
+    <!----------------------------------
+        local CSS files
+        ---------------------------------->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!----------------------------------
+        imported CSS files
+        ---------------------------------->
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="input">
+            <div class="search">
+                <div class="searchBox">
+                    <input class="searchInput" type="text" onchange=movie_details() id="moviename">
+                    <button class="searchButton" onclick=movie_details()><i style="margin: 11px;" id="sea">
+                            <i class="fas fa-search">
+                            </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="details">
+        <h1 class="details"></h1>
+        <div class="title">
+            <h1 id="title"></h1>
+        </div>
+        <div class="poster">
+            <a id="poster_big" href=""><img src="" id="poster" alt="" class="s"></img></a>
+        </div>
+        <div class="content">
+            <h4 id="date"></h4>
+            <h4 id="type"></h4>
+            <h4 id="actor"></h4>
+            <h4 id="imbrating"></h4>
+            <h4 id="rating"></h4>
+            <h4 id="gener"></h4>
+            <h4 id="award"></h4>
+            <h4 id="director"></h4>
+            <h4 id="plot"></h4>
+            <h4 id="runtime"></h4>
+            <h4 id="Language"></h4>
+            <h4 id="country"></h4>
+        </div>
+    </div>
+    <!----------------------------------
+        local Java-Script files
+        ---------------------------------->
+    <script src="assets/js/api_call.js"></script>
+    <!----------------------------------
+        imported Java-Script files
+        ---------------------------------->
+    <script src="https://kit.fontawesome.com/009c2c0a56.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
